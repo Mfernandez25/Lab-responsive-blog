@@ -1,0 +1,190 @@
+$bg-negro:#000;
+$color:#fff;
+$bg-fondo:#2D2735;
+$tipografia:Courgette;
+$letra:#F5B23E;
+$style:italic;
+$bg-caja:#282525;
+// *{outline:1px solid red;}
+body{
+	color:$color;
+	background-color:$bg-fondo;
+	font-family: "Open+Sans"
+}
+header{
+	background-color:$bg-negro;
+}
+header img{
+	max-height:90px;
+}
+h1, h2, h3, h4{
+	font-family: $tipografia;
+	color: $letra;
+	font-style: $style;
+}
+
+.menu-logo img{
+	// max-width: 100%;
+	// max-height:100%;
+}
+.list-menu{
+	margin-top: 20px;
+}
+.list-menu li{
+	margin:20px 5px;
+}
+.list-menu a{
+	display: block;
+	text-decoration: none;	
+	color:#fff;
+}
+.hero{
+	background-image: url("../image/header-image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	color: #fff;
+	margin-top:20px;
+}
+.hero h1{
+	font-size: 60px;
+	margin-bottom:20px;
+}
+.hero .spring{
+	background-color:$bg-negro;
+	width: 600px;
+	padding: 40px;
+	position: absolute;
+	margin:  200px 260px;
+	
+	
+}
+.flowers img{
+	width: 100%;
+}
+.flowersimg{
+	background-color: $bg-caja;
+	padding-bottom:10px;
+	margin-top: 20px;
+}
+.contenido img{
+  width: 100%;
+}
+.contenido-caja{
+	background-color: $bg-caja;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.contenido-caja p{
+   padding: 10px;
+}
+.form{
+	background-color: $bg-caja;
+	padding: 20px;
+	margin-top: 20px;
+}
+.form input{
+	width: 100%;
+	background-color: $bg-fondo;
+	border: 1px solid $bg-fondo;
+	padding:5px;
+}
+.about{
+	background-color: $bg-caja;
+	padding-bottom: 20px;
+}
+.about .redondo{
+	width: 40px;
+	border-radius: 25px;
+	padding: 2px;
+	background-color: $bg-fondo;
+	display: inline-block;
+	margin-left: 5px;
+}
+.about p{
+	padding: 10px;
+}
+.about i{
+	font-size: 20px;
+	margin: 5px;
+}
+.footer{
+	background-color:$bg-caja;
+	padding: 20px;
+}
+
+// EMPIEZA MEDIA 920
+@media screen and(max-width:920px){
+	.menu-logo img{
+	margin-top:10px;
+	}
+	.list-menu{
+		margin-top: 30px;
+	}
+	.hero .spring{
+	margin-left:60px;
+
+	}	
+}
+@media screen and(max-width:600px){
+	.hero .spring{
+	width: 500px;
+	padding: 100px 40px;
+	position: absolute;
+	margin: 32px;
+	
+	}
+	.hero .spring h1{
+		font-size: 120px;
+	}
+	.hero .spring li{
+		font-size: 20px;
+	}
+	.flowersimg{
+	margin-top: 0px;
+	}
+	.contenido{
+		margin-top: 20px;
+	}
+	.contenido-caja{
+	margin-bottom: 0;
+	margin-top: 0px;
+	}
+	.form{
+	margin-top: 0px;
+}
+	.about h2{
+		margin-top: 0;
+	}
+	.footer{
+		margin-top: 20px;
+	}
+	.menunav ul li a{
+		color: white;
+	}
+
+}
+
+@media (max-width:360px){
+	.menu-logo img{
+	width: 150%;
+	margin-top: 20px;
+	}
+	.hero .spring{
+	width: 250px;
+	padding: 10px 20px;
+	margin: 20px;
+	
+	}
+	.hero{
+	height: 250px;
+	}
+	.hero .spring h1{
+	font-size: 40px;
+	}
+	.hero .spring li{
+	font-size: 10px;
+	}
+	
+}
